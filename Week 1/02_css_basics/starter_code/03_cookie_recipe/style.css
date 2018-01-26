@@ -1,0 +1,23 @@
+article {
+	background-color: #FFE;
+	border: 2px solid black;
+	font-family:Georgia,serif;
+	padding: 30px;
+	margin: 0;
+	}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a { 
+	color: #900; 
+}
+
+h2 span {
+	color: #887;
+}
+
+img {
+	border:2px solid black;	
+}

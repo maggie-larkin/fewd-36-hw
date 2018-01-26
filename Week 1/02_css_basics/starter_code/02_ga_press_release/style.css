@@ -1,0 +1,40 @@
+
+
+	body {
+		background-color: #ba2024;
+	}
+	
+	article {
+      margin: 20px 40px;
+      background-color: white;
+  	}
+
+  	h2 {
+  		background-color: black;
+  		color: white;
+  	}
+
+  	p { 
+  		color: red;
+  		font-size: 14px;
+  		text-decoration: underline;
+  	 }
+
+  	li {
+  	 	font-family:helvetica,arial,sans;
+  	 	display: block;
+  	 	float: left;
+  	 	padding: 10px;
+  	 }
+
+  	 ul {
+  	 	list-style-type: none;
+  	 	overflow: hidden; 
+  	 }
+
+  	a {
+  		color: pink;
+  		text-decoration:none;
+
+  	}
+

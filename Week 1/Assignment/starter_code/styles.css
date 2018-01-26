@@ -1,0 +1,45 @@
+body {
+	background-color: #F6F6F6;
+	margin: 0;
+	color: #05080C;
+	padding: 20px 40px 50px;
+	border-width: 5px 0;
+	border-style: solid;
+	border-color:#222222;
+	font-family: Arial, sans serif;
+	line-height: 1.5em
+}
+
+
+p {
+	font-family: times new roman, serif;
+	font-size: 18px;
+	
+}
+
+img {
+
+	float: right;
+	margin-left:20px;
+}
+
+
+th, td {
+	text-align: left;
+	padding: 5px;
+}
+
+
+th {
+	background-color: #222222;
+	color: #ffffff;
+}
+
+
+td {
+	background-color: #eeeeee;
+}
+
+ul.citations {
+	list-style: none;
+}
