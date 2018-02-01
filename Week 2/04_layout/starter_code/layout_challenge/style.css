@@ -1,0 +1,26 @@
+.twoColumn {
+	background: #adadad;
+	border: 1px solid black;
+	min-height: 200px;
+	margin: 20px;
+}
+
+.twoColumntwoColumnWrapper {
+
+}
+
+.mainTwoColumns {
+	float: left;
+	height: 500px;
+	width: 60%;
+}
+
+.asideTwoColumns {
+	float: left;
+	height:500px;
+	width: 30%;
+}
+
+.footerTwoColumns {
+	clear:both;
+}
