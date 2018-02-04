@@ -78,6 +78,17 @@ In this drill the goal is to be precise with the selector nesting. Make sure tha
 */
 
 
+nav.selectorDrillNavigation {
+    float:left;
+    margin: 0px;
+}
+
+li.placeholder {
+    padding:10px;
+    float:left;
+    overflow: hidden;
+}
+
 
 
 /*
@@ -87,15 +98,35 @@ In this drill the goal is to be precise with the selector nesting. Make sure tha
     * Float it left
 */
 
+.logoAndNavigation div.placeholder {
+    background-color: #2c97de;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    float: left;
+}
 
 
 
+.mainSiteContent .placeholder {
+    width:100%;
+
+}
+
+.mainSiteContent .articleList .placeholder {
+    background-color:#42a2e1;
+}
+
+.mainSiteContent > .placeholder {
+    background-color:#CC6666;
+}
 /*
 3)  The Main Content
     * All content items should be 100% wide
     * Articles should have a background of:#42a2e1
     * Intro Content should have a background of: #CC6666
 */
+
 
 
 

@@ -1,13 +1,23 @@
-.twoColumn {
+.layoutChallenge {
 	background: #adadad;
 	border: 1px solid black;
 	min-height: 200px;
 	margin: 20px;
 }
 
+.twoColumntwoColumnWrapper:after {
+    display: block;
+    content: "";
+    clear: both;
+}
 .twoColumntwoColumnWrapper {
+	width:100%;
+	padding:20px;
+	box-sizing: border-box:;
 
 }
+
+/*for two column layout  */
 
 .mainTwoColumns {
 	float: left;
@@ -21,6 +31,33 @@
 	width: 30%;
 }
 
-.footerTwoColumns {
+/*end for two column layout  */
+
+.twoFerColumn {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	margin:0px;
+
+}
+
+
+.threeColStripe:after {
+    display: block;
+    content: "";
+    clear: both;
+
+}
+
+.threeColColumn {
+	width: 29.5%;
+	float:left;
+	box-sizing: border-box;
+
+}
+
+.footerLayoutChallenge {
 	clear:both;
 }
+
+
