@@ -14,3 +14,208 @@
      line-height: 0;
      height: 0;
 }
+/* Global*/
+
+body {
+  font-size:20px;
+  line-height: 1.4;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background: #f0efef;
+  margin:auto;
+}
+
+
+
+/* Navigation */
+.RelaxrNav {
+	background: #033048;
+	display:flex;
+	height:120px;
+
+
+}
+
+
+.Logo {
+	font-size:48px;
+	font-weight:800;
+	color: white;
+	flex:1;
+	min-width:180px;
+	max-width:200px;
+	margin: 30px 40px 30px 100px;
+
+}
+
+
+.RelaxrNavItems {
+	flex:5;
+	margin-left:170px;
+	
+}
+
+.RelaxrNavItems ul {
+	display:flex;
+	text-decoration:none;
+	margin-top:50px;
+
+}
+
+
+.RelaxrNavItems ul li a {
+	text-decoration:none;
+	color:#f9e42e;
+	font-weight:300;
+	font-size:24px;
+	flex:1;
+	min-width:60px;
+	max-width:200px;
+	margin-left:40px;
+
+
+}
+
+.RelaxrBody {
+	display:flex;
+	margin: 30px 100px;
+
+}
+
+main {
+	flex:4;
+	margin-right:60px;
+}
+
+.RelaxrBlogPost h1 a {
+	font-weight: 600;
+	font-size:40px;
+	color: #033048;
+	line-height: 1;
+	text-decoration: none;
+	margin-bottom:30px;
+
+}
+
+.RelaxrBlogPost p {
+	font-size: 24px;
+    line-height: 1.333;
+    color: #606161;
+}
+
+.RelaxrBlogPost p:first-letter {
+	font-size:70px;
+	font-weight:600;
+	float:left;
+   
+}
+
+.RelaxrBlogPost {
+	border-bottom: 2px solid #033048;
+	padding-bottom:30px;
+}
+
+.ReadMoreLink {
+	font-weight:800;
+	color:#033048;
+	text-decoration: none;
+	text-align:right;
+}
+
+.RelaxrBlogPost .ReadMoreLink a {
+	font-weight:800;
+	color:#033048;
+	text-decoration: none;
+	padding:20px 0;
+
+}
+aside {
+	flex:1;
+}
+
+aside h2{
+	font-weight: 800;
+	font-size: 32px;
+    color: #043049;
+}
+
+
+.RelaxrCategories ul{
+	list-style: none;
+
+}
+
+.RelaxrCategories ul li a{
+	font-size:24px;
+	text-decoration:none;
+	font-weight:300;
+	color:#043049;
+	line-height: 1.5;
+	text-align: left;
+
+}
+
+
+.AboutRelaxr {
+	margin-bottom:30px;
+}
+
+
+.AboutRelaxr p {
+	font-size: 22px;
+    color: #606161;
+}
+
+.AboutRelaxr .ReadMoreLink a {
+	font-weight:800;
+	color:#033048;
+	text-decoration: none;
+	padding:20px 0;
+
+}
+
+.RelaxrFooter {
+	background: black;
+	width:100%;
+	padding-bottom:30px;
+}
+
+.RelaxrFooter .RelaxrCallToAction {
+	background:#f9e42e;
+	height:100px;
+	padding:20px;
+}
+
+.RelaxrBlueButton {
+	background: #033048;
+	width: 250px;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-align:center;
+	color: white;
+	font-weight: 800;
+	font-size: 28px;
+	border-radius: 5px;
+	margin:0 auto;
+	display:block;
+
+}
+.RelaxrFooter h1{
+	font-weight:800;
+	color:#f9e42e;
+	font-size:48px;
+	text-align:center;
+}
+
+.footerIcons {
+	margin: 20px auto;
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+.RelaxrFooter p {
+	font-size: 14px;
+	text-align:center;
+	color:white;
+}

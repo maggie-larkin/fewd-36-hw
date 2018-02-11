@@ -1,0 +1,34 @@
+document.getElementById('stopButton').onclick = illuminateRed;
+document.getElementById('slowButton').onclick = illuminateYellow;
+document.getElementById('goButton').onclick = illuminateGreen;
+
+
+function illuminateRed() {
+  clearLights();
+  document.getElementById('stopLight').style.backgroundColor = "red";
+}
+
+
+function illuminateYellow () {
+	//clear all colors
+	clearLights();
+	
+	//turn middle circle yellow
+	document.getElementById('slowLight').style.backgroundColor = "yellow"
+
+}
+
+function illuminateGreen () {
+	//clear all colors
+	clearLights();
+	//turn bottom circle green
+	document.getElementById('goLight').style.backgroundColor = "green";
+
+}
+
+
+function clearLights() {
+  document.getElementById('stopLight').style.backgroundColor = "black";
+  document.getElementById('slowLight').style.backgroundColor = "black";
+  document.getElementById('goLight').style.backgroundColor = "black";
+}

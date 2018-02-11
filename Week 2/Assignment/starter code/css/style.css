@@ -112,7 +112,7 @@ body {
 
 }
 
-.RelaxrTestimonial blockquote .blockquoteAttribution {
+.RelaxrTestimonial blockquote.blockquoteAttribution {
 	color: white;
 	font-size: 24px;
 	font-weight: 800;
