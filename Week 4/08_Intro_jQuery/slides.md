@@ -104,10 +104,10 @@ $() - the almighty selector!
 * Use the same selectors you write in CSS!
 
 ```
-$('div') // select all <div>'s
-$('h2') // select all <h2>'s
-$('p a') // select all <a>'s inside of all <p>'s
-$('p, a') // select all <p>'s and <a>'s
+$('div') // select all div's
+$('h2') // select all h2's
+$('p a') // select all a's inside of all p's
+$('p, a') // select all p's and a's
 ```
 
 ---
@@ -147,7 +147,7 @@ $('#someId').html()
 Inserts and overwrites the HTML inside the selected element:
 
 ```
-$('#someId').html('<h1>a heading</h1>')
+$('#someId').html('&lt;h1&gt;a heading&lt;/h1&gt;')
 ```
 
 ---
@@ -292,11 +292,11 @@ Best practice is to write jQuery using the $(document).ready() function:
 Adding jQuery to your website
 
 ```
-<script src="js/jquery-1.8.3.min.js">&lt;/script>
+&lt;script src="js/jquery-1.8.3.min.js">&lt;/script&gt;
 ```
 
 ```
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">&lt;/script>
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt;
 ```
 
 ---

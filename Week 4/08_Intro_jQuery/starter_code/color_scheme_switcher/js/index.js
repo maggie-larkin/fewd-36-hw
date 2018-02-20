@@ -1,12 +1,13 @@
-document.getElementById('grayButton').onclick = switchGray;
-document.getElementById('whiteButton').onclick = switchWhite;
+jQuery ("#grayButton").on('click', switchGray());
+jQuery ("#whiteButton").on('click', switchWhite());
 
 function switchGray() {
-  document.body.style.backgroundColor = 'gray';
- document.body.style.color = 'white';
+
+	jQuery("body").css("background","gray");
+	jQuery("body").css("color","white");
 }
 
 function switchWhite() {
-  document.body.style.backgroundColor = 'white';
-  document.body.style.color = 'black';
+  	jQuery("body").css("background","white");
+	jQuery("body").css("color","gray");
 }
