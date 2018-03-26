@@ -22,28 +22,28 @@ jQuery("form").on("change","#city-type",selectCity);
 function selectCity() {
 
 //Get the value of user input using ```$.val()```
-	jQuery("#city-type").val();
+var selected= jQuery("#city-type").val();
 
 // When the user changes the input of the drop-down, update the background image based on what they selected
 //Use ```if/else if/else ``` conditionals to control the flow of your application
 //Use the ```$.attr()``` function to update html classes 
-	if (cities[0]) {
+	if (selected == cities[0]) {
 	jQuery("body").attr("class","nyc");
 	}
 
-	else if (cities[1]) {
+	else if (selected == cities[1]) {
 	jQuery("body").attr("class","sf");
 	}
 
-	else if (cities[2]) {
+	else if (selected == cities[2]) {
 	jQuery("body").attr("class","la");
 	}
 
-	else if (cities[3]) {
+	else if (selected == cities[3]) {
 	jQuery("body").attr("class","austin");
 	}
 
-	else if (cities[4]) {
+	else if (selected == cities[4]) {
 	jQuery("body").attr("class","sydney");
 	}
 
