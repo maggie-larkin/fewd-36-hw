@@ -35,6 +35,7 @@ body {
 	font-family:"Cera",sans-serif;
 	font-weight: 400;
 	color:#666D78;
+	box-sizing: content-box;
 }
 
 a {
@@ -65,7 +66,7 @@ a {
 }
 
 .mainNav {
-	flex: 8;
+	flex: 5;
 }
 
 
@@ -94,12 +95,67 @@ a {
 }
 
 .heroContent {
+	text-align: center;
+	color:#ffffff;
 
 }
+
 .heroContent h1 {
 	font-size: 48px;
 	margin:160px 0 30px 0;
-	text-align:center;
-	color:#ffffff;
 	font-weight: 600;
+}
+
+.heroEmail {
+	height:60px;
+	border-width:0;
+	margin:70px 0 30px 0;
+}
+
+input.heroEmail {
+	color:#666D78;
+	width:450px;
+	padding:0 0 0 20px;
+	
+}
+
+button.heroEmail{
+	width: 98px;
+	margin-left:0;
+	margin:1px;
+	color:#ffffff;
+
+}
+
+.yellow {
+	background-color: #F7901C;
+}
+
+.singleIcon {
+	max-width: 430px;
+}
+
+.circle {
+	width:56px;
+	height: 56px;
+	border-radius: 50%;
+	background-color:#57B7FF;
+	color:#ffffff;
+	border-top:20px;
+	font-size: 24px;
+	text-align: center;
+	vertical-align:middle;
+	display:inline-block;
+
+}
+
+h4 {
+	font-size: 22px;
+	color:#333F52;
+
+}
+
+p {
+	font-size: 16px;
+	color:#666D78;
 }
