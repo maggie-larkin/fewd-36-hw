@@ -65,7 +65,10 @@ h3 {
 h3:before{
 	height:2px;
 	width:30px;
-	padding-bottom:30px;
+	margin-bottom:30px;
+	display:block;
+	background-color: #57B7FF;
+	content:"";
 }
 
 h4 {
@@ -193,14 +196,12 @@ p {
 input.heroEmail {
 	color:#666D78;
 	padding:0 0 0 20px;
-	width:100%;
-	
+	width:100%;	
 }
 
 button.heroEmail{
 	color:#ffffff;
 	width:100%;
-
 }
 
 
@@ -216,8 +217,8 @@ button.heroEmail{
 
 .LPIcons{
 	margin:120px 40px 140px 40px;
-
 }
+
 .singleIcon {
 	max-width: 430px;
 	display: inline-block;
@@ -234,7 +235,6 @@ button.heroEmail{
 	font-size: 24px;
 	line-height: 2.3;
 	text-align: center;
-
 }
 
 .LPKeyNumbers {
@@ -245,7 +245,6 @@ button.heroEmail{
 	min-height:300px;
 	padding:100px 0;
 	width:100%;
-
 }
 
 .singleNumber h5{
@@ -283,6 +282,8 @@ button.heroEmail{
 }
 .SignUpInputs button{
 	text-align:center;
+	padding:15px 15px;
+	color:#ffffff;
 
 }
 
