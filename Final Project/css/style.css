@@ -3,26 +3,26 @@
 /*******************************************/
 
 @font-face {
-    font-family: "Cera";
-    src: url("fonts/Cera-Basic/Regular/cerabasic-regular-webfont.eot");
-    src: url("fonts/Cera-Basic/Regular/cerabasic-regular-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/Cera-Basic/Regular/cerabasic-regular-webfont.woff") format("woff"),
-         url("fonts/Cera-Basic/Regular/cerabasic-regular-webfont.ttf") format("truetype"),
-         url("fonts/Cera-Basic/Regular/cerabasic-regular-webfont.svg") format("svg");
-    font-weight: normal;
-    font-style: normal;
+	font-family: "Cera";
+	src: url("../fonts/Cera-Basic/Regular/cerabasic-regular-webfont.eot");
+	src: url("../fonts/Cera-Basic/Regular/cerabasic-regular-webfont.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/Cera-Basic/Regular/cerabasic-regular-webfont.woff") format("woff"),
+	url("../fonts/Cera-Basic/Regular/cerabasic-regular-webfont.ttf") format("truetype"),
+	url("../fonts/Cera-Basic/Regular/cerabasic-regular-webfont.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
 
 }
 
 @font-face {
-    font-family: "Cera";
-    src: url("fonts/Cera-Basic/Bold/cerabasic-bold-webfont.eot");
-    src: url("fonts/Cera-Basic/Regular/cerabasic-bold-webfont.eot?#iefix") format("embedded-opentype"),
-         url("fonts/Cera-Basic/Regular/cerabasic-bold-webfont.woff") format("woff"),
-         url("fonts/Cera-Basic/Regular/cerabasic-bold-webfont.ttf") format("truetype"),
-         url("fonts/Cera-Basic/Regular/cerabasic-bold-webfont.svg") format("svg");
-    font-weight: bold;
-    font-style: normal;
+	font-family: "Cera";
+	src: url("../fonts/Cera-Basic/Bold/cerabasic-bold-webfont.eot");
+	src: url("../fonts/Cera-Basic/Bold/cerabasic-bold-webfont.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/Cera-Basic/Bold/cerabasic-bold-webfont.woff") format("woff"),
+	url("../fonts/Cera-Basic/Bold/cerabasic-bold-webfont.ttf") format("truetype"),
+	url("../fonts/Cera-Basic/Bold/cerabasic-bold-webfont.svg") format("svg");
+	font-weight: bold;
+	font-style: normal;
 
 }
 
@@ -37,10 +37,31 @@ body {
 	color:#666D78;
 	box-sizing: content-box;
 	max-width: 1440px;
+	line-height: 1em;
 }
 
 a {
 	text-decoration: none;
+}
+
+h1 {
+	font-family:"Cera",sans-serif;
+}
+
+h2 {
+	font-family:"Cera",sans-serif;
+}
+
+
+h3 {
+	color: #333F52;
+	font-size:30px;
+}
+
+h3:before{
+	height:2px;
+	width:30px;
+	padding-bottom:30px;
 }
 
 h4 {
@@ -56,22 +77,27 @@ p {
 }
 
 
+
 /******************************************
 /* LAYOUT
 /*******************************************/
-
+.container-fluid {
+	padding:0;
+}
 .LPHero {
-    background-color:rgba(53,72,96,100);
+	background-color:rgba(53,72,96,100);
 	background-image: url("../images/heroimage.png");
 	background-size: cover;
-	height:800px;
+	min-height:800px;
 	padding:20px;
+	width:100%;
 	
 }
 
 .nav {
 	width: 1440px;
 	display: flex;
+	margin:20px;
 
 }
 
@@ -81,6 +107,7 @@ p {
 
 .mainNav {
 	flex: 1;
+	margin-right:20px;
 }
 
 
@@ -111,23 +138,28 @@ p {
 .heroContent {
 	text-align: center;
 	color:#ffffff;
+	padding:0 100px;
 
 }
 
 .heroContent h1 {
 	font-size: 48px;
-	margin:160px 0 30px 0;
-	font-weight: 600;
+	margin:100px 0 30px 0;
 }
 
 .heroContent p {
-	color:#fffff;
+	color:#ffffff;
 }
 
+.heroEmailSignUp {
+	display:inline-block;
+	margin:0 auto;
+
+}
 .heroEmail {
 	height:60px;
 	border-width:0;
-	margin:70px 0 30px 0;
+	margin:50px 0 30px 0;
 }
 
 input.heroEmail {
@@ -157,6 +189,7 @@ button.heroEmail{
 .singleIcon {
 	max-width: 430px;
 	display: inline-block;
+	margin:0 40px 30px 0;
 }
 
 .circle {
@@ -170,30 +203,126 @@ button.heroEmail{
 	line-height: 2.3;
 	text-align: center;
 
+}
+
+.LPKeyNumbers {
+	background-color:rgba(53,72,96,100);
+	background-image: url("../images/keynumbersbanner.png");
+	background-size: cover;
+	min-height:300px;
+	padding:100px 0;
+	width:100%;
 
 }
 
-.singleIconText {
+.singleNumber h5{
+	font-size:64px;
+	color:#ffffff;
+	font-weight: 800;
+	text-align:center;
+}
 
+.singleNumber p{
+	font-size:20px;
+	color:#ffffff;
+	text-align: center;
+}
+
+.LPAbout {
+	border-bottom:1px solid #D9DADD;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+}
+.LPYouTubeVideo {
+	width: 100%;
+	height:100%;
+	
+}
+
+.LPVideoText {
+	margin-top: 30px
+}
+
+.singleMedia {
+	margin-top: 50px;
+	margin-bottom:30px;
+	border: 1px solid #D9DADD;
+	padding: 30px 22px;
+	background-color:#ffffff;
+
+}
+
+.singleMedia:hover {
+	filter: drop-shadow(0px 14px 40px #666D78);
+
+
+}
+.singleMedia a .outlet {
+	font-family: 16px
+	color: #D9DADD;
+}
+
+.LPMedia {
+	margin-top: 100px
+	margin-bottom: 30px;
+}
+.LPMedia a .ghost{
+	margin:10px auto;
+}
+
+.ghost {
+	border: 1px solid #D9DADD;
+	font-size: 18px;
+	color:#D9DADD;
+	padding: 15px 40px;
+}
+
+.LPGoogleMap {
+	width:100%;
+	min-height: 300px;
 }
 
 
 footer {
 	background-color: #333F52;
+	height: 180px;
+	display:flex;
+	width:100%;
 }
 
 footer p{
 	color: #ffffff;
+	padding:70px 10px;
+	flex:1;
 }
 
+footer p a{
+	color: #ffffff;
+	border-bottom:1px solid #57B7FF;
+}
+
+footer ul {
+	flex:1;
+	padding:70px 10px;
+}
 
 footer li {
 	list-style:none;
 	display: inline-block;
+
 }
 
 footer ul li a{
-	color:#ffffff;
-	font-size: 18px;
-	margin-left:45px;
+	color:#57B7FF;
+	font-size: 20px;
+	margin-left:20px;
+	background-color: #ffffff;
+	height:40px;
+	width:40px;
+	line-height: 2.3;
+	text-align:center;
+	border-radius:50%;
+	display: inline-block;
 }
