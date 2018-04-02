@@ -15,39 +15,52 @@
 
 
   <!-- Hero Section-->
+  <aside class="mobileMenu"> 
+    <div class="XOutMobile"><a href="#"><i class="fas fa-bars"></i></a></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a class="menuItem" href="#latest">Latest</a></li>
+      <li><a class="menuItem" href="#features">Features</a></li>
+      <li><a class="menuItem" href="#contactus">Contact Us</a></li>
+      <li><a class="blue button" href="#signup">Sign Up</a></li>
+    </ul>
+  </aside>
+
 
   <div class="container-fluid">
 
     <div class="LPHero">
 
-    	<div class="row">
-    		<header class="nav col-lg-12">
-          <a class="logo" href="/"><img src="images/logo.png"></a>
+     <div class="row">
+      <header class="nav col-lg-12">
+        <a class="logo" href="/"><img src="images/logo.png"></a>
 
-          <nav> 
-           <ul class="mainNav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#latest">Latest</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#contactus">Contact Us</a></li>
-            <li><a class="blue button" href="#signup">Sign Up</a></li>
-          </ul>
-        </nav>
+        <nav> 
+         <ul class="mainNav">
+          <li><a href="#"><i class="fas fa-bars"></i></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#latest">Latest</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+          <li><a class="blue button" href="#signup">Sign Up</a></li>
+        </ul>
+      </nav>
 
-      </header>
-    </div>
-    <div class="row">
-      <div class="heroContent offset-lg-2 col-lg-8">
-        <h1>Manage your landing page launches in a smart way</h1>
-        <p>Lorem ipsum dolor sit amet, ne tota dictas invenire eos, saepe timeam an duo, minim scriptorem cu quo. Saepe appareat cu eam, eu vix liber dictas dicunt</p>
+    </header>
+  </div>
+  <div class="row">
+    <div class="heroContent offset-md-2 col-md-8 col-xsm-12">
+      <h1>Manage your landing page launches in a smart way</h1>
+      <p>Lorem ipsum dolor sit amet, ne tota dictas invenire eos, saepe timeam an duo, minim scriptorem cu quo. Saepe appareat cu eam, eu vix liber dictas dicunt</p>
 
-        <div class="heroEmailSignUp form-group">
-          <input class="heroEmail" type="email" name="heroEmail" placeholder="Enter Your Email">
-          <button class="yellow button heroEmail" type="submit" class=""><i class="fas fa-arrow-right"></i></button>
-        </div>
+      <div class="heroEmailSignUp form-group row">
+        <div class="bootstrapOveride col-sm-10"><input class="heroEmail" type="email" name="heroEmail" placeholder="Enter Your Email"></div>
+        <div class="col-sm-2 bootstrapOveride"><button class="yellow button heroEmail" type="submit" class=""><i class="fas fa-arrow-right"></i></button></div>
       </div>
+      <div class="scrollButton"><i class="fas fa-chevron-down"></i></div>
     </div>
   </div>
+</div>
 
 </div>
 </div>
@@ -143,17 +156,22 @@
 <div class="container">
 
   <div id="signup" class="LPSignUp">
-
-    <h2>Sign Up for Updates</h2>
-    <div class="form-group">
-      <input type="text" name="firstName" placeholder="First Name">
-      <input type="text" name="lastName" placeholder="Last Name">
-      <input type="email" name="mainEmail" placeholder="Email Address">
-      <input type="number" name="zipCode" placeholder="Zip Code">
-      <button type="submit" class="yellow button">Submit</button>
+    <div class="row">
+      <div class="offset-md-2 col-md-8">
+        <h2>Sign Up for Updates</h2>
+        <div class="form-group row SignUpInputs">
+          <div class="col-md-6"><input type="text" name="firstName" placeholder="First Name"></div>
+          <div class="col-md-6"><input type="text" name="lastName" placeholder="Last Name"></div>
+        </div>
+        <div class="row SignUpInputs">
+          <div class="col-md-6"><input type="email" name="mainEmail" placeholder="Email Address"></div>
+          <div class="col-md-3"><input type="number" name="zipCode" placeholder="Zip Code"></div>
+          <div class="col-md-3"><button type="submit" class="yellow button">Submit</button></div>
+        </div>
+      </div>
     </div>
-
   </div>
+
 
   <!-- End Sign Up Form -->
 
@@ -169,7 +187,7 @@
   <!-- End About -->
 
   <!-- Video Section -->
-  
+
   <div class="LPVideo">
     <div class="row">
       <div class="col-md-6">
@@ -191,44 +209,50 @@
     <h3>Latest Updates</h3>
 
     <div class="row">
-      <div class="singleMedia col-md-4">
-        <a href="#">
-          <p class="outlet">Washington Post</p>
-          <h4>This is an example of a headline with 2 lines of text</h4>
-          <p class="date">February 7, 2018</p>
-          <p>Ut faucibus ipsum quis enim posuere mollis vel eu quam. Aenean pharetra quam ut lacus auctor, eget interdum arcu varius. Vivamus vel sem sit amet justo convallis molestie.</p>
-          <p class="pseduLink">Read More</p>
-        </a>
+      <div class="col-md-4">
+        <div class="singleMedia">
+          <a href="#">
+            <p class="outlet">Washington Post</p>
+            <h4>This is an example of a headline with 2 lines of text</h4>
+            <p class="date">February 7, 2018</p>
+            <p>Ut faucibus ipsum quis enim posuere mollis vel eu quam. Aenean pharetra quam ut lacus auctor, eget interdum arcu varius. Vivamus vel sem sit amet justo convallis molestie.</p>
+            <p class="pseduLink">Read More</p>
+          </a>
+        </div>
       </div>
 
-      <div class="singleMedia col-md-4">
-        <a href="#">
-          <p class="outlet">Vox</p>
-          <h4>This is an example of a headline with 2 lines of text</h4>
-          <p class="date">February 7, 2018</p>
-          <p>Ut faucibus ipsum quis enim posuere mollis vel eu quam. Aenean pharetra quam ut lacus auctor, eget interdum arcu varius. Vivamus vel sem sit amet justo convallis molestie.</p>
-          <p class="pseduLink">Read More</p>
-        </a>
+      <div class="col-md-4">
+        <div class="singleMedia">
+          <a href="#">
+            <p class="outlet">Vox</p>
+            <h4>This is an example of a headline with 2 lines of text</h4>
+            <p class="date">February 7, 2018</p>
+            <p>Ut faucibus ipsum quis enim posuere mollis vel eu quam. Aenean pharetra quam ut lacus auctor, eget interdum arcu varius. Vivamus vel sem sit amet justo convallis molestie.</p>
+            <p class="pseduLink">Read More</p>
+          </a>
+        </div>
       </div>
 
-      <div class="singleMedia col-md-4">
-        <a href="#">
-          <p class="outlet">Axios</p>
-          <h4>This is an example of a headline with 2 lines of text</h4>
-          <p class="date">February 7, 2018</p>
-          <p>Ut faucibus ipsum quis enim posuere mollis vel eu quam. Aenean pharetra quam ut lacus auctor, eget interdum arcu varius. Vivamus vel sem sit amet justo convallis molestie.</p>
-          <p class="pseduLink">Read More</p>
-        </a>
+      <div class="col-md-4">
+        <div class="singleMedia">
+          <a href="#">
+            <p class="outlet">Axios</p>
+            <h4>This is an example of a headline with 2 lines of text</h4>
+            <p class="date">February 7, 2018</p>
+            <p>Ut faucibus ipsum quis enim posuere mollis vel eu quam. Aenean pharetra quam ut lacus auctor, eget interdum arcu varius. Vivamus vel sem sit amet justo convallis molestie.</p>
+            <p class="pseduLink">Read More</p>
+          </a>
+        </div>
       </div>
-    </a>
+
+
+      <a class="button ghost" href="#">Load More</a>
+    </div>
   </div>
 
-  <a class="button ghost" href="#">Load More</a>
-</div>
 
 
-
-<!-- End Latest Media -->
+  <!-- End Latest Media -->
 
 
 <!-- Testimonial 
@@ -243,9 +267,10 @@
 -->
 
 <div class="container-fluid">
-  <div class ="LPMap" id="contactus">
+  <div class="LPMap" id="contactus">
     <iframe class="LPGoogleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198718.35168319318!2d-77.17086067440268!3d38.90170427173623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b9cccd0710bb%3A0x2c0f7d89eb94c29f!2sEngage+LLC!5e0!3m2!1sen!2sus!4v1522286999786" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
+</div>
 </div>
 
 

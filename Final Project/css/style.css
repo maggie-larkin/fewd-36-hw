@@ -36,11 +36,15 @@ body {
 	font-weight: 400;
 	color:#666D78;
 	box-sizing: content-box;
-	max-width: 1440px;
-	line-height: 1em;
+	width:100%;
+	line-height: 1.6em;
 }
 
 a {
+	text-decoration: none;
+}
+
+a:hover {
 	text-decoration: none;
 }
 
@@ -88,6 +92,7 @@ p {
 	background-color:rgba(53,72,96,100);
 	background-image: url("../images/heroimage.png");
 	background-size: cover;
+	background-position: center center;
 	min-height:800px;
 	padding:20px;
 	width:100%;
@@ -124,15 +129,29 @@ p {
 
 }
 
+.mainNav li:first-child {
+	display:none;
+}
+
+.mainNav li a:hover{
+	border-bottom: 1px solid #57B7FF;
+
+}
+
 .button {
 	padding:15px 40px;
 	font-size:18px;
 	font-weight: 800;
 	text-align: center;
+	display: block;
 }
 
 .blue {
 	background:#57B7FF;
+}
+
+.blue:hover {
+	background:#354860;
 }
 
 .heroContent {
@@ -151,34 +170,47 @@ p {
 	color:#ffffff;
 }
 
-.heroEmailSignUp {
-	display:inline-block;
-	margin:0 auto;
-
-}
 .heroEmail {
 	height:60px;
 	border-width:0;
-	margin:50px 0 30px 0;
 }
+.bootstrapOveride {
+	padding:0;
+}
+
+.scrollButton {
+	width:36px;
+	height:36px;
+	background-color: rgba(51,63,82,51);
+	border-radius: 50%;
+	text-align: center;
+	line-height: 2.4em;
+	margin:120px auto 50px auto;
+	cursor: pointer;
+}
+
 
 input.heroEmail {
 	color:#666D78;
-	width:450px;
 	padding:0 0 0 20px;
+	width:100%;
 	
 }
 
 button.heroEmail{
-	width: 98px;
-	margin-left:0;
-	margin:1px;
 	color:#ffffff;
+	width:100%;
 
 }
 
+
 .yellow {
 	background-color: #F7901C;
+	border: none;
+}
+
+.yellow:hover {
+	background-color: #FFD16B;
 }
 
 
@@ -209,6 +241,7 @@ button.heroEmail{
 	background-color:rgba(53,72,96,100);
 	background-image: url("../images/keynumbersbanner.png");
 	background-size: cover;
+	background-position: center center;
 	min-height:300px;
 	padding:100px 0;
 	width:100%;
@@ -227,6 +260,32 @@ button.heroEmail{
 	color:#ffffff;
 	text-align: center;
 }
+
+.LPSignUp {
+	margin-top:80px;
+	margin-bottom: 60px;
+}
+
+.LPSignUp h2{
+	font-size:36px;
+	line-height: 2em;
+	padding-bottom: 30px;
+	color:#2DA1F8;
+	padding-left:0;
+}
+
+.SignUpInputs input, button{
+	height: 60px; 
+	margin-bottom:10px;
+	width:100%;
+	padding-left:10px;
+
+}
+.SignUpInputs button{
+	text-align:center;
+
+}
+
 
 .LPAbout {
 	border-bottom:1px solid #D9DADD;
@@ -254,8 +313,15 @@ button.heroEmail{
 
 }
 
+
 .singleMedia:hover {
 	filter: drop-shadow(0px 14px 40px #666D78);
+
+
+}
+
+.singleMedia .pseduLink:hover {
+	color:#2DA1F8;
 
 
 }
@@ -265,18 +331,20 @@ button.heroEmail{
 }
 
 .LPMedia {
-	margin-top: 100px
+	margin-top: 100px;
 	margin-bottom: 30px;
+	max-width: 1140px;
 }
-.LPMedia a .ghost{
-	margin:10px auto;
-}
+
 
 .ghost {
 	border: 1px solid #D9DADD;
 	font-size: 18px;
 	color:#D9DADD;
 	padding: 15px 40px;
+	margin: 0 auto;
+	display: block;
+	max-width:200px;
 }
 
 .LPGoogleMap {
@@ -294,7 +362,7 @@ footer {
 
 footer p{
 	color: #ffffff;
-	padding:70px 10px;
+	margin:70px 10px;
 	flex:1;
 }
 
@@ -305,7 +373,7 @@ footer p a{
 
 footer ul {
 	flex:1;
-	padding:70px 10px;
+	padding:70px 10px 0px 70px;
 }
 
 footer li {
@@ -325,4 +393,92 @@ footer ul li a{
 	text-align:center;
 	border-radius:50%;
 	display: inline-block;
+}
+
+/******************************************
+/* Mobile Menu
+/*******************************************/
+.mobileMenu {
+	display:none;
+	width:100%;
+	height:100%;
+	background-color:#333F52;
+	z-index:100;
+	position: fixed;
+	top:0;
+	padding:30px;
+}
+
+.mobileMenu ul {
+	list-style: none;
+}
+.mobileMenu ul li a{
+	color:#ffffff;
+	text-decoration: none;
+	font-size: 30px;
+	line-height: 3em;
+}
+
+.mobileMenu ul li a:hover{
+	border-bottom: 1px solid #57B7FF;
+}
+
+.mobileMenu .blue:hover{
+	background-color: #FFD16B;
+}
+
+.mobileMenu .XOutMobile a{
+	display:inline-block;
+	position:absolute;
+	top: .6em;
+	right: .75em;
+	color:#ffffff;
+	font-size:18px;
+	padding-top:40px;
+	padding-right:25px;
+}
+
+.mobileMenu.open {
+	display: block
+
+}
+
+
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
+@media screen and (max-width: 820px) {
+
+.heroContent h1 {
+		font-size: 28px;
+
+	}
+
+.mainNav li {
+	display:none;
+}
+
+.mainNav li:first-child{
+	display:inline-block;
+	position:absolute;
+	top: .6em;
+	right: .75em;
+
+}
+
+.SignUpInputs:first-child {
+	margin-bottom:0px;
+}
+
+p {
+	line-height: 1em;
+}
+
+footer ul li a{
+	margin-bottom: 5px;
+}
+
+
 }
